@@ -7,10 +7,13 @@
     <script>
         var path = window.location.pathname;
         var repo = "/blazorPortfolio"; // Adjust this to match your repo name
-        var newUrl = repo + "/index.html";
+        var newUrl = repo + path; 
 
-        if (path !== repo + "/") {
-            window.location.replace(newUrl + "?redirect=" + path);
+        // Redirect only if not already at the correct base URL
+        if (!path.startsWith(repo)) {
+            window.location.replace(repo + "/");
+        } else {
+            window.location.replace(newUrl);
         }
     </script>
 </head>
@@ -19,7 +22,7 @@
     <p>If you are not redirected, <a id="manual-link" href="#">click here</a>.</p>
 
     <script>
-        document.getElementById("manual-link").href = newUrl + "?redirect=" + path;
+        document.getElementById("manual-link").href = repo + "/";
     </script>
 </body>
 </html>

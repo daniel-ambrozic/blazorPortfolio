@@ -9,11 +9,11 @@
             var repo = "/blazorPortfolio"; // Ensure this matches your repository name
             var path = window.location.pathname;
 
-            // Ensure we don't keep appending the repo name endlessly
+            // Ensure we are not appending "index.html" unnecessarily
             if (!path.startsWith(repo)) {
                 window.location.replace(repo + path);
             } else if (path !== repo + "/" && path !== repo) {
-                window.location.replace(repo + "/index.html");
+                window.location.replace(repo + "/"); // Redirect to base URL without "index.html"
             }
         })();
     </script>

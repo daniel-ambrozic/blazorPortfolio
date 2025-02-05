@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -111,4 +111,49 @@ code {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
+} */
+
+body {
+    background: url('/Forest Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
+
+
+
+
+/* @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(135deg, #4DB6AC, #00796B, #004D40);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    color: white;
+} */
+
+
+/* 
+body {
+    background: linear-gradient(135deg, #4DB6AC, #004D40);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+*/
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+}
+ 

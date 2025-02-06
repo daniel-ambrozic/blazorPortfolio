@@ -114,7 +114,7 @@ code {
 } */
 
 body {
-    background: url('/Forest Background.jpg') no-repeat center center fixed;
+    background: url('Forest Background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;

@@ -114,7 +114,7 @@ code {
 } */
 
 body {
-    background: url('blazorPortfolio/Forest%20Background.jpg') no-repeat center center fixed;
+    background: url('/blazorPortfolio/Forest%20Background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
